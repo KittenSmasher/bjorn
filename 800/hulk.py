@@ -2,7 +2,15 @@
 
 n = int(input())
 
-n1 = 'I hate it'
-n2 = 'I hate that I love it'
-n3 = 'I hate that I love that I hate it'
+f = []
+
+for i in range(1, n+1):
+    if i%2==1:
+        f.append("I hate")
+    else:
+        f.append("I love")
+
+print(" that ".join(f) + " it")
+
+
 

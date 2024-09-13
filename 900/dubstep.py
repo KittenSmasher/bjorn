@@ -1,8 +1,11 @@
 # https://codeforces.com/problemset/problem/208/A
 
 
-s = input()
+s = input().strip()
 
-s = s.replace('WUB', ' ')
+s = s.split('WUB')
 
-print(s)
+while '' in s:
+    s.remove('')     
+
+print(' '.join(s))
